@@ -23,6 +23,10 @@
    {{Form::label('costo','Costo:')}}
    {{Form::textarea('costo')}}
    </div>
+   <div>
+   {{Form::label('tiempoPubli','TiempoPubli:')}}
+   {{Form::textarea('tiempoPubli')}}
+   </div>
 
    <div>
    {{Form::submit($submit_text)}}
