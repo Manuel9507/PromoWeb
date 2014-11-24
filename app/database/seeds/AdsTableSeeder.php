@@ -7,14 +7,9 @@ class AdsTableSeeder extends Seeder {
 
 	public function run()
 	{
-		$faker = Faker::create();
-
-		foreach(range(1, 10) as $index)
-		{
-			Ad::create([
-
-			]);
-		}
+		$ads = array(['titulo' => 'Prueba', 'prioridad' => 'Alta', 'contenido' => 'Hola que tal este es el primer anuncio de prueba', 'imagen' => '1.jpg', 'descripcion' => 'anuncio publicitario', 'costo' => 20.95, 'tiempoPubli' => '1 dia', 'created_at' => new DateTime, 'updated_at' => new DateTime, 'user_id' => 2]);
+	
+		xDB::table('ads')->insert($ads);
 	}
 
 }
