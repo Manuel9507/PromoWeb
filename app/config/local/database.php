@@ -25,7 +25,7 @@ return array(
 			'host'      => 'localhost',
 			'database'  => 'db_PromoWeb',
 			'username'  => 'root',
-			'password'  => 'manuel',
+			'password'  => 'hillary12',
 			'charset'   => 'utf8',
 			'collation' => 'utf8_unicode_ci',
 			'prefix'    => '',
