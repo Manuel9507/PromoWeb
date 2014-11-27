@@ -32,7 +32,7 @@
 			<li><img src=" " alt="" /></li>
 			<li><img src=" " alt="" /></li>
 </ul>
-@yield('main')
+          @yield('main')
 <script type="text/javascript" src="/assets/js/jquery.js"></script>
 <script type="text/javascript" src="/assets/js/jquery.roundabout.js"></script>
 <script type="text/javascript">

@@ -14,7 +14,11 @@
 Route::get('/', function()
 {
 	return View::make('hello');
+
+
 });
 
 
 Route::model('ads', 'Ad');
+Route::bind('ads', function($value, $route) { return Ad::whereId($value)->first();});
+Route::resource("ads", "AdsController");
