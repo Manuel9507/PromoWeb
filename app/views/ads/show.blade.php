@@ -1,1 +1,16 @@
-/home/manuel/proyectos/PromoWeb/app/views/ads/show.blade.php
+@section('main')
+	<h2>{{ $ad->titulo }}</h2>
+	<span>Por: {{ $ad->user->nombre }}
+	el {{ $ad->created_at }}</span>
+	<p>
+		{{ $ad->contenido }}
+	</p>
+	<p><strong> Prioridad: </strong> {{ $ad->prioridad }}
+	</p>
+
+	
+	<p align="center">
+	{{ link_to_route('ads.index', 'Volver a Posts')}}
+	</p>
+		
+@stop

@@ -10,7 +10,7 @@ class AdsController extends \BaseController {
 	 */
 	public function index()
 	{
-		$ads = Post::all();
+		$ads = Ad::all();
 		$this->layout->content = View::make('ads.index', compact('ads'));
 	}
 
