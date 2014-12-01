@@ -1,1 +1,0 @@
-/home/manuel/proyectos/PromoWeb/app/views/users/index.blade.php

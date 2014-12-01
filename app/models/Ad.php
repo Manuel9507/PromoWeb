@@ -1,5 +1,5 @@
 <?php
 
 class Ad extends \Eloquent {
-	protected $fillable = [];
+	protected $fillable = ['titulo','prioridad','contenido','imagen','descripcion','costo','tiempoPubli','user_id'];
 }

@@ -18,7 +18,15 @@ Route::get('/', function()
 
 });
 
+//Route::post('login','UserLogin');
 
 Route::model('ads', 'Ad');
+Route::model('users', 'User');
 Route::bind('ads', function($value, $route) { return Ad::whereId($value)->first();});
 Route::resource("ads", "AdsController");
+Route::resource("users", "UsersController");
+
+//Route::get('login2',array('before'=>'auth.basic',function()
+//{
+//	return View::make('hello');
+//}));
