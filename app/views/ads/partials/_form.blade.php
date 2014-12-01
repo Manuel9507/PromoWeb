@@ -21,11 +21,11 @@
    </div>
     <div>
    {{Form::label('costo','Costo:')}}
-   {{Form::textarea('costo')}}
+   {{Form::text('costo')}}
    </div>
    <div>
    {{Form::label('tiempoPubli','TiempoPubli:')}}
-   {{Form::textarea('tiempoPubli')}}
+   {{Form::text('tiempoPubli')}}
    </div>
 
    <div>
