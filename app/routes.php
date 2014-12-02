@@ -18,11 +18,11 @@ Route::get('/', function()
 
 });
 
-
+//Route::post('login','UserLogin');
+Route::group(array('before'=>'auth'),function()
+{
 Route::model('ads', 'Ad');
+Route::model('users', 'User');
 Route::bind('ads', function($value, $route) { return Ad::whereId($value)->first();});
 Route::resource("ads", "AdsController");
-
-Route::get('login', array('uses' => 'HomeController@showLogin'));
-
-Route::post('login', array('uses' => 'HomeController@doLogin'));
+});
