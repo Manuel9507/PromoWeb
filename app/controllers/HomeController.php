@@ -20,4 +20,16 @@ class HomeController extends BaseController {
 		return View::make('hello');
 	}
 
+	public function showLogin()
+	{
+		$this->layout->content = View::make('home.login'); 
+	}
+
+	public function doLogin()
+	{
+
+	}
+
+
+
 }
