@@ -19,6 +19,7 @@ class CreateAdsTable extends Migration {
 			$table->string('email');
 			$table->string('password');
 			$table->string('telefono');
+			$table->rememberToken();
 			$table->timestamps();
 		});
 

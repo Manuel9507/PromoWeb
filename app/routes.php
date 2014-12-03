@@ -17,6 +17,11 @@ Route::get('/', function()
 
 
 });
+Route::get('login', array('uses' => 'HomeController@showLogin'));
+
+Route::post('login', array('uses' => 'HomeController@doLogin'));
+
+Route::get('logout', array('uses' => 'HomeController@doLogout'));
 
 //Route::post('login','UserLogin');
 Route::group(array('before'=>'auth'),function()
