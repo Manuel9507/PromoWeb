@@ -23,6 +23,11 @@ Route::post('login', array('uses' => 'HomeController@doLogin'));
 
 Route::get('logout', array('uses' => 'HomeController@doLogout'));
 
+
+Route::model('ads_invitado', 'Ad');
+Route::bind('ads_invitado', function($value, $route) { return Ad::whereId($value)->first();});
+Route::resource("ads_invitado", "AdsController");
+
 //Route::post('login','UserLogin');
 Route::group(array('before'=>'auth'),function()
 {

@@ -20,6 +20,12 @@
 			{{ Form::password('password',  array('class' => 'form-control')) }}
 		</div>
 
+		
+		<label>
+		{{ Form::checkbox('rememberme', true) }} Recuerdame
+		</label>
+		
+
 </div>
 
 		<div>{{ Form::submit('Entrar', array("class" => "btn btn-primary btn-sm")) }}</div>
