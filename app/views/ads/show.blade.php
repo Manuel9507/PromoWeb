@@ -10,7 +10,12 @@
 
 	
 	<p align="center">
-	{{ link_to_route('ads.index', 'Volver a Posts')}}
+	{{ link_to_route('ads.index', 'Volver a Anuncios')}}
 	</p>
-		
+	
+		<p>
+	{{link_to_route('ads.edit','Editar Anuncio', $ad->id)}}
+</p>
+
 @stop
+

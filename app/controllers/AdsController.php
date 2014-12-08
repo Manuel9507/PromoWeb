@@ -35,7 +35,7 @@ class AdsController extends \BaseController {
 	{
 		//almacenar el nuevo Anuncio = Ad
 		$input = Input::all();
-		$input['ad_id'] = 2; //autor temporal
+		$input['user_id'] = 2; //autor temporal
 		Ad::create( $input );
 
 		return Redirect::route('ads.index')->with('message', 'Anuncio Creado, Ya No Moleste :D');
@@ -51,7 +51,7 @@ class AdsController extends \BaseController {
 	 */
 	public function show(Ad $ad)
 	{
-		$this->layout->content = View::make('ads.edit', compact('ad'));
+		$this->layout->content = View::make('ads.show', compact('ad'));
 	}
 
 	/**
@@ -85,12 +85,13 @@ class AdsController extends \BaseController {
 	 * Remove the specified resource from storage.
 	 * DELETE /ads/{id}
 	 *
-	 * @param  int  $id
+	 * @param  Ad $ad
 	 * @return Response
 	 */
-	public function destroy($id)
+	public function destroy(Ad $ad)
 	{
-		//
+		$ad->delete();
+		return Redirect::route('ads.show', $ad->id)->with('message', 'Anuncio Eliminado!!!');
 	}
 
 }

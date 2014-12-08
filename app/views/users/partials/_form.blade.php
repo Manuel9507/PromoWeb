@@ -1,6 +1,6 @@
 
             <div class="well sidebar-nav">
-                  <h3>Iniciar Sesión</h3>
+                  <h3>Registro de Usuario</h3>
                   <div class="form-group">
                      {{Form::label('nombre','Nombre: ', array('class' => 'control-label') )}}
                      {{Form::text('nombre', null, array('class' => 'form-control')) }}
@@ -13,6 +13,12 @@
                      {{Form::label('password','Password: ')}}
                      {{Form::text('password',null, array('class' => 'form-control'))  }}
                   </div>
+
+                   <div class="form-group">
+                     {{Form::label('telefono','Telefono: ')}}
+                     {{Form::text('telefono',null, array('class' => 'form-control'))  }}
+                  </div>
+
                   <br />
                 {{Form::submit($submit_text)}}
                 {{ Form::close() }}

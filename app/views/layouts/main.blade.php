@@ -29,17 +29,16 @@
 
 
     <div class="navbar-header">
-      <a class="navbar-brand" href="#">Inicio</a>
+     
     </div>
 
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       <ul class="nav navbar-nav">
-        <li><a href="#">Publicación</a></li>
 
         <li><a href="http://localhost:8000/ads_invitado">Invitado</a></li>
 
         <li>
-          <a href="http://localhost:8000/users/create" role="button" data-toggle="modal"><i class="glyphicon glyphicon-plus"></i> Registra Usuario</a>
+          <a href="http://localhost:8000/users/create" role="button" data-toggle="modal"><i class="glyphicon glyphicon-plus"></i> Registra Usuario (SOLO PERSONAL REGISTRADO)</a>
        </li>
       </ul>
      
@@ -65,7 +64,7 @@
 </div>
                        <div class="col-sm-6">
                             <p>
-                            <a href="#" class="pull-right">©Copyright 2020</a>
+                            <strong  class="pull-right">©Copyright 2020</strong>
                             </p>
                           </div>
                          

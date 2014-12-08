@@ -9,10 +9,13 @@
 				<a href="{{ route('ads.show', $ad->id) }}">
 				<strong>{{ $ad-> titulo }}</strong></a>
 				<p>{{ $ad->contenido }}</p>
-				<p>{{ $ad->imagen }}</p>
+				<p>{{ $ad->descripcion }}</p>
 				</li>
 			@endforeach
 		</ul>
 	@endif
 		<p>{{ link_to_route('ads.create', 'Crear un Nuevo Anuncio')}}</p>
+
+		
+
 @stop
