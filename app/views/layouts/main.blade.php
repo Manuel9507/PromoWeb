@@ -7,6 +7,7 @@
     <link rel="shortcut icon" href="/assets/favicon.ico" type="image/vnd.microsoft.icon"/>
     <title>PromoWeb</title>
     <link href="/assets/css/bootstrap.min.css" rel="stylesheet">
+    {{HTML::style('/assets/css/styles.css')}}
   </head>
   <body style="padding-bottom: 30px;">
 <nav class="navbar navbar-blue navbar-static-top" role="navigation">
@@ -51,8 +52,8 @@
 
   <div class="row">
 
-      <div class="col-md-5">
-      <div class="well">
+      <div  class="col-md-5">
+      <div id="login1"class="well">
 
             @yield('main')
             </div>

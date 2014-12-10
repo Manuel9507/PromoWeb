@@ -5,7 +5,7 @@
 	<p>
 		{{ $ad->contenido }}
 	</p>
-	<p><strong> Prioridad: </strong> {{ $ad->prioridad }}
+	<p><strong> Imagen: </strong> {{ $ad->imagen }}
 	</p>
 
 	

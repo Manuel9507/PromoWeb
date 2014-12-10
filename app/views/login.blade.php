@@ -1,5 +1,5 @@
 @section('main')
-
+{{HTML::style('assets/css/styles.css')}}
 {{ Form::open(array('url' => 'login')) }}
  <div id="login" class="well sidebar-nav">
 		<h1>Iniciar Sesion</h1>
@@ -25,9 +25,10 @@
 		{{ Form::checkbox('rememberme', true) }} Recuerdame
 		</label>
 		
+		<div>{{ Form::submit('Entrar', array("class" => "btn btn-primary btn-sm")) }}</div>
+
 
 </div>
-
-		<div>{{ Form::submit('Entrar', array("class" => "btn btn-primary btn-sm")) }}</div>
 {{ Form::close() }}
+
 @stop
