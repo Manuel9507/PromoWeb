@@ -35,7 +35,7 @@ class AdsController extends \BaseController {
 	{
 		//almacenar el nuevo Anuncio = Ad
 		$input = Input::all();
-		$input['user_id'] = 2; //autor temporal
+		$input['user_id'] = Auth::user()->id; //autor
 		Ad::create( $input );
 
 		return Redirect::route('ads.index')->with('message', 'Anuncio Creado, Ya No Moleste :D');

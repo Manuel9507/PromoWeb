@@ -1,3 +1,4 @@
+{{HTML::style('assets/css/styles.css')}}
 <div align='center'>
    <div>
    {{Form::label('titulo','Titulo:')}}
@@ -13,7 +14,7 @@
    </div>
    <div>
    {{Form::label('imagen','Imagen:')}}
-   {{Form::text('imagen')}}
+   {{Form::file('imagen')}}
    </div>
    <div>
    {{Form::label('descripcion','Descripcion:')}}

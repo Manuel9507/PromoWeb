@@ -11,7 +11,7 @@
                   </div>
                   <div class="form-group">
                      {{Form::label('password','Password: ')}}
-                     {{Form::text('password',null, array('class' => 'form-control'))  }}
+                     {{Form::password('password',null, array('class' => 'form-control'))  }}
                   </div>
 
                    <div class="form-group">
